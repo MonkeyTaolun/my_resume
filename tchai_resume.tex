@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% Taolun Chai's resume
+%%   - based off work by Michael DeCorte 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%
+%% The following code sets up the document formatting
+%%
+
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line, multicol]{res_yy}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Taolun Chai}
+
+%this is right aligned
+\address{
+Address: 556 main st, Apt 104, New York, NY. \ \ \ \ Tel: (414)-530-4932 \ \ \ \ \ E-mail: tc1112@nyu.edu  
+}
+
+\begin{resume}
+
+
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+\section{\textsc{Education:}}
+
+\textbf{\newline New York University} \hfill 2010 - Present \\
+Master Student in Computer Science \hfill Expected: May, 2012
+\newline
+\textbf{Southern Polytechnic State Unversity} \hfill 2008 - 2010 \\ 
+Bachelor of Science in Computer Science \hfill Graduated with Honors
+\newline
+\textbf{Northeast Normal University} \hfill 2006 - 2010 \\
+Bachelor of Science in Computer Science \hfill Graduated
+
+%%\section{\textsc{Technical Skills}}
+%%\textbf{Programming Languages: } Java, C/C++, SQL, Python, Perl \\
+%%\textbf{Operating System: } Linux, Mac OS X, Windows \\
+%%\textbf{Application: } VIM, Eclipse, Git, SVN, Apache, GDB \\
+%%\textbf{Database: } mysql, SQL Server
+%%\newline
+
+\section{\textsc{Course Work:}}
+
+\begin{multicols}{2}
+\begin{itemize}
+    \item Algorithm
+    \item Programming Languages
+    \item Open Source Tools
+    \item Operating System
+    \item Financial Computing 
+    \item Distribute Computing
+\end{itemize}
+\end{multicols}
+
+
+\section{\textsc{Qualifications:}}
+
+\textbf{\newline Programming Languages}: \Cplusplus, Java, C, \CSharp, Python, Perl, SQL \\
+\textbf{Editors and Tools}: Vim, GCC, GDB, MySQL, Microsoft Visual Studio, CMake, \LaTeX \\
+\textbf{Version Control System}: Git, SVN \\
+\textbf{Operating System}: Linux, Mac OS X, Windows 
+%%
+%% the meat of the resume starts now
+%%
+
+
+\section{\textsc{Work Experience:}}
+\textbf{\newline Shutterstock Images LLC} \hfill Software Engineer Intern\\
+Development Environment: C/C++, Perl on Linux \hfill Summer 2011
+\begin{itemize}
+    \item Designed and implemented a customized Photo anlysis library for automatic detect and recognize given arbitrary image.
+    \item Based on the library, designed and implemented the prototype of image search and auto key-wording system.
+    \item Helped updating search engine of freestock.com.
+\end{itemize}
+
+%Designed and implemented a customized Photo anlysis library for automatic detect and recognize given arbitrary image.
+%Based on the library, designed and implemented the prototype of image search and auto key-wording system. \\
+%Also helped replacing the search engine of www.freestock.com.
+
+\textbf{Southern Polytechnic State University} \hfill Research Assistant\\
+Development Environment: \CSharp, matlab on Windows \hfill Spring 2009 through Spring 2010 \\
+Focused on pattern recognition research. Published "An improvement on the
+modified gradient method for face localization" on IEEE Southeast-Con 2010
+and presented a lecture on the conference. \\
+Participated then led the FaceTrace project, which apply face recognition
+technology on identify person for access control purpose.
+Helped delivered the distributed version on time.
+Designed and implemented the hand-held version system.
+
+\section{\textsc{Other Projects:}}
+\textbf{\newline On-line Java Instant Assessment System} \hfill Spring 2010\\
+Applied the Unit test idea on automatically collect and grading assignments. Utilized by professors at SPSU serving all level Java programming course. \\
+Published "Design of Online Runtime and Testing Environment for Instant Java Programming Assessment" on 2010 7th International Conference on Information Technology.
+
+\textbf{Web-based Ontology for Vulnerability Management} \hfill Fall 2009\\
+By analyzing the holistic vulnerability information with given security requirements, 
+provides a quantitative score for the evaluated software product.\\
+Offers recommendation on software vulnerability control to achieve ISA $($Information
+Security Automation$)$.
+
+%%
+%% This section could also use more formatting, but looks ok, as is
+%%
+
+
+\section{\textsc{Activities:}} 
+\textbf{\newline}
+SPSU Honor’s Student. \\
+Member of Alpha (National College Honor Scholarship Society).  \\
+SPSU Computer Science Departement Dean's List.\\
+First Prize of ACM/ICPC 2008 Northeast China Part Region Site.	\\
+First Prize of ACM/ICPC 2008 Jilin Region Site. 
+
+%%
+%% Nothing special here, just a normal table
+%%
+
+
+
+
+\end{resume}
+\end{document}
